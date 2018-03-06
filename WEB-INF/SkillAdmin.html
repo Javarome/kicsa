@@ -1,0 +1,311 @@
+<html><head><title>Administration - KiCsa - Orange France</title>
+   
+  <link rel="STYLESHEET" type="text/css" href="dsi.css">
+<script language="JavaScript">
+
+<!--
+
+// Ouverture 
+
+function dbg_aff_dimension(lgWidth, lgHeight) {
+
+
+
+	stEgal = '\t=  "' ;
+
+	alert(' **** STEPH DEBUG ****' + '\n' +
+
+	      ' Dimensions de la fenêtre à venir' + '"\n' +
+
+	      ' Largeur' + stEgal + lgWidth       + '"\n' +
+
+	      ' Hauteur' + stEgal + lgHeight       + '"\n'
+
+		  ) ;
+
+	
+
+}
+
+function fenetre(strPage,lgWidth,lgHeight) { 
+
+	//dbg_aff_dimension(lgWidth, lgHeight) ;
+
+
+
+	if (lgWidth  == null)	lgWidth  = 620 ;
+
+	if (lgHeight == null)	lgHeight = 258 ;
+
+	
+
+	//dbg_aff_dimension(lgWidth, lgHeight) ;
+
+	
+
+	win1 = window.open (strPage,'Fenetre','screenX=400,screenY=100,scrollbars=1,location=0,toolbar=0,directories=0,menubar=0,status=0,resizable=0,width='+lgWidth+',height='+lgHeight) ; 
+
+	win1.focus();
+
+} 
+
+
+
+// -->
+
+</script>
+
+<script language="JavaScript">
+
+
+
+function mail(nom,Objet)
+
+{
+
+p = document.location.toString()
+
+if (Objet.length > 0)
+
+{
+
+	p = Objet;
+
+}
+
+pg = 'http://mailto.francetelecom.fr/cgi-bin/messagerie/message.pl?'+nom+'&URL='+escape(p)
+
+fen = window.open(pg,'mail','resizable=1,scrollbars=1,width=600,height=500')
+
+fen.focus();
+
+}
+
+</script></head>
+	
+
+ <body bgcolor="#ffffff" link="#ee6d04" vlink="#ee6d04" alink="#000000">
+
+<table width="100%">
+  <tbody> 
+  <tr> 
+    <td align="center"> 
+      <table border="0" width="100%" cellpadding="2" cellspacing="0">
+        <tbody> 
+        <form name="form1" method="post" action="">
+          <tr> 
+            <td width="" align="center" valign="top" colspan="6"> 
+              <div align="left" class="titre_noir"> 
+                <p><span class="titre_noir_2">administration</span></p>
+                </div>
+            </td>
+          </tr>
+          <tr> 
+            <td align="center" class="barreTitreOrange" colspan="6">Relations 
+              entre comp&eacute;tences</td>
+          </tr>
+          <tr> 
+            <td align="left" class="normal" colspan="5">Type de relation n&deg; 
+              1</td>
+            <td align="left"> 
+              <input type="text" name="textfield2" value="Parent">
+            </td>
+          </tr>
+          <tr> 
+            <td align="left" class="normal" colspan="5">Type de relation n&deg; 
+              2</td>
+            <td align="left"> 
+              <input type="text" name="textfield222" value="Pr&eacute;c&eacute;dent">
+            </td>
+          </tr>
+          <tr> 
+            <td align="left" class="normal" colspan="5">Type de relation n&deg; 
+              3</td>
+            <td align="left"> 
+              <input type="text" name="textfield22" value="Voir aussi">
+            </td>
+          </tr>
+          <tr> 
+            <td align="left" class="normal" colspan="5"> Nouveau type de relation 
+            </td>
+            <td align="left"> 
+              <input type="text" name="textfield223">
+            </td>
+          </tr>
+          <tr> 
+            <td align="left" class="normal" colspan="5">Type de relation pour 
+              repr&eacute;senter une comp&eacute;tence &quot;m&egrave;re&quot; 
+              dans l'arborescence </td>
+            <td align="left"> 
+              <select name="select">
+                <option selected>Parent</option>
+              </select>
+              ou 
+              <select name="select2">
+                <option>Plus g&eacute;n&eacute;rique</option>
+                <option selected>Voir aussi</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" colspan="6">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td align="center" colspan="6"> 
+              <div align="center">
+                <p class="barreTitreOrange">Niveaux de comp&eacute;tence</p>
+              </div>
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" colspan="6" class="info">Indiquez les niveaux comp&eacute;tences 
+              et leurs descriptions g&eacute;n&eacute;rales</td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right" rowspan="2" class="nav">Th&eacute;orique</td>
+            <td width="5" valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Modifier</div>
+            </td>
+            <td width="5" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td colspan="2" valign="top" bgcolor="#FFF8F0"><span class="info">Description</span><br>
+              <textarea name="textfield" rows="4" wrap="PHYSICAL" cols="50">Exemple : Savoir que ce cela fait, avoir lu la norme, etc.</textarea>
+              <br>
+              Niveau 
+              <select name="select4">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td width="5" valign="top">&nbsp;</td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Supprimer</div>
+            </td>
+            <td width="" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td colspan="2" valign="top" bgcolor="#FFF8F0"><span class="info"> 
+              <input type="checkbox" name="checkbox" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal" colspan="2">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right" rowspan="2" class="nav">Ma&icirc;trise</td>
+            <td width="5" valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Modifier</div>
+            </td>
+            <td width="5" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td colspan="2" valign="top" bgcolor="#FFF8F0"><span class="info">Description</span><br>
+              <textarea name="textfield" rows="4" wrap="PHYSICAL" cols="50">Exemple : Avoir utilisé le produit, etc. </textarea>
+              <br>
+              Niveau 
+              <select name="select4">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td width="5" valign="top">&nbsp;</td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Supprimer</div>
+            </td>
+            <td width="" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td colspan="2" valign="top" bgcolor="#FFF8F0"><span class="info"> 
+              <input type="checkbox" name="checkbox" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal" colspan="2">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right" rowspan="2" class="nav">Expertise</td>
+            <td width="5" valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Modifier</div>
+            </td>
+            <td width="5" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td colspan="2" valign="top" bgcolor="#FFF8F0"><span class="info">Description</span><br>
+              <textarea name="textfield" rows="4" wrap="PHYSICAL" cols="50">Exemple : Etre capable de dépanner, etc.</textarea>
+              <br>
+              Niveau 
+              <select name="select4">
+                <option>1</option>
+                <option>2</option>
+                <option selected>3</option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td width="5" valign="top">&nbsp;</td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Supprimer</div>
+            </td>
+            <td width="" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td colspan="2" valign="top" bgcolor="#FFF8F0"><span class="info"> 
+              <input type="checkbox" name="checkbox" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal">&nbsp;</td>
+            <td valign="top" class="normal" colspan="2">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right"><span class="normal">Nouveau niveau</span> 
+              <input type="text" name="textfield3" value="Grand pontife c&eacute;leste">
+            </td>
+            <td width="5" valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Modifier</div>
+            </td>
+            <td width="5" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td colspan="2" valign="top" bgcolor="#FFF8F0"><span class="info">Description</span><br>
+              <textarea name="textarea" rows="4" wrap="PHYSICAL" cols="50">Omniscient, omnipotent</textarea>
+              <br>
+              Niveau 
+              <select name="select4">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option selected>4</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Localisation -->
+        </form>
+        <tr> 
+          <td align="center" colspan="6"> 
+            <form name="form2" method="post" action="">
+              <input type="submit" name="Submit" value="Enregistrer">
+            </form>
+            <i><br>
+            Fiche mise à jour le 20/08/2002<br>
+            </i> </td>
+        </tr>
+        <tr> 
+          <td align="center" width="" colspan="6"> <a href="javascript:history.go(-1)">retour</a></td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+</body></html>

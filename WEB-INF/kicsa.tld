@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+ <!DOCTYPE taglib 
+ PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" 
+ "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+    <tlibversion>1.0</tlibversion>
+    <jspversion>1.1</jspversion>
+    <shortname>kicsa</shortname>
+    <uri>/WEB-INF/kicsa.tld</uri>
+    <tag>
+        <name>activity</name>
+        <tagclass>org.orange.kicsa.presentation.view.ActivityBodyTag</tagclass>
+        <teiclass>org.orange.kicsa.presentation.view.ActivityBodyTagExtraInfo</teiclass>
+        <bodycontent>JSP</bodycontent>
+        <info>Inserts appropriate Web link according to worflow
+
+TODO: Move parsing in a Application.Worflow helper/singleton</info>
+        <attribute>
+            <name>id</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>labelId</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>hrefId</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+    <tag>
+        <name>relationships</name>
+        <tagclass>org.orange.kicsa.presentation.view.RelationshipBodyTag</tagclass>
+        <teiclass>org.orange.kicsa.presentation.view.RelationshipBodyTagExtraInfo</teiclass>
+        <bodycontent>JSP</bodycontent>
+        <info>Iterate on some skill relationships</info>
+        <attribute>
+            <name>skill</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>relationshipId</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>direction</name>
+        </attribute>
+        <attribute>
+            <name>type</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+</taglib>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- Struts 1.1 forms validation rules -->
+<form-validation>
+
+<!-- ========== Default Language Form Definitions ===================== -->
+   <formset>
+
+     <form name="adminForm">
+	    <field property="relationshipTypes" depends="required">
+                <arg0 key="prompt.relationshipType"/>
+        </field>
+     </form>
+
+     <form name="skillForm">
+
+        <field property="skill.shortName" depends="required">
+          <arg0 key="prompt.shortName"/>
+        </field>
+
+     </form>
+
+     <form name="employeeForm">
+
+        <field property="employee.firstName" depends="required">
+          <arg0 key="prompt.firstName"/>
+          <!-- var>
+              <var-name>mask</var-name>
+              <var-value>^[a-z A-Z]*$</var-value>
+           </var -->
+        </field>
+
+        <field property="employee.lastName" depends="required">
+          <arg0 key="prompt.lastName"/>
+          <!-- var>
+              <var-name>mask</var-name>
+              <var-value>^[a-z A-Z]*$</var-value>
+           </var -->
+        </field>
+
+        <field property="employee.entityName" depends="required">
+          <arg0 key="prompt.entityAbbreviation"/>
+        </field>
+
+     </form>
+
+     <form name="employeeSearchForm">
+        <field property="employee.id" depends="required">
+          <arg0 key="prompt.firstName"/>
+          <arg1 key="prompt.lastName"/>
+        </field>
+     </form>
+
+  </formset>
+</form-validation>

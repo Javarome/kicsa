@@ -1,0 +1,15 @@
+Application Web KiCsa
+=====================
+
+Type d'application : Interne
+Domaine            : Gestion des compétences
+
+
+Contenu de ce répertoire
+------------------------
+WebApp/			Application Web, contenant pages (.html et .jsp)
+WebApp/images   	Images nécessaires aux pages (.html et .jsp)
+WebApp/lib		Libraries JavaScript
+WebApp/WEB-INF
+WebApp/WEB-INF/classes	Classes Java compilées (*.class)
+WebApp/WEB-INF/lib	Librairies nécessaires (*.jar)

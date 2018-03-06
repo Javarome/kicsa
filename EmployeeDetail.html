@@ -1,0 +1,146 @@
+<html><head><title>J&eacute;r&ocirc;me Beau - Fiche de comp&eacute;tences - KiCsa - Orange France</title>
+   
+  <link rel="STYLESHEET" type="text/css" href="dsi.css">
+<script language="JavaScript">
+
+<!--
+
+// Ouverture 
+
+function dbg_aff_dimension(lgWidth, lgHeight) {
+
+
+
+	stEgal = '\t=  "' ;
+
+	alert(' **** STEPH DEBUG ****' + '\n' +
+
+	      ' Dimensions de la fenêtre à venir' + '"\n' +
+
+	      ' Largeur' + stEgal + lgWidth       + '"\n' +
+
+	      ' Hauteur' + stEgal + lgHeight       + '"\n'
+
+		  ) ;
+
+	
+
+}
+
+function fenetre(strPage,lgWidth,lgHeight) { 
+
+	//dbg_aff_dimension(lgWidth, lgHeight) ;
+
+
+
+	if (lgWidth  == null)	lgWidth  = 620 ;
+
+	if (lgHeight == null)	lgHeight = 258 ;
+
+	
+
+	//dbg_aff_dimension(lgWidth, lgHeight) ;
+
+	
+
+	win1 = window.open (strPage,'Fenetre','screenX=400,screenY=100,scrollbars=1,location=0,toolbar=0,directories=0,menubar=0,status=0,resizable=0,width='+lgWidth+',height='+lgHeight) ; 
+
+	win1.focus();
+
+} 
+
+
+
+// -->
+
+</script>
+
+<script language="JavaScript">
+
+
+
+function mail(nom,Objet)
+
+{
+
+p = document.location.toString()
+
+if (Objet.length > 0)
+
+{
+
+	p = Objet;
+
+}
+
+pg = 'http://mailto.francetelecom.fr/cgi-bin/messagerie/message.pl?'+nom+'&URL='+escape(p)
+
+fen = window.open(pg,'mail','resizable=1,scrollbars=1,width=600,height=500')
+
+fen.focus();
+
+}
+
+</script></head>
+	
+
+ <body bgcolor="#ffffff" link="#ee6d04" vlink="#ee6d04" alink="#000000">
+
+<table width="100%">
+  <tbody> 
+  <tr> 
+    <td align="center"> 
+      <table border="0" width="100%" cellpadding="2" cellspacing="0">
+        <tbody> 
+        <tr> 
+          <td colspan="2" align="center" valign="middle"> 
+            <p> <span class="prenomorange">j&eacute;r&ocirc;me</span><span class="nomorange">beau</span></p>
+            <p class="lien_orange">DSI/IT/EASY/ACE</p>
+            <p class="lien_orange">&nbsp;</p>
+          </td>
+        </tr>
+        <tr> 
+          <td colspan="2" align="center" class="barreTitreOrange"> Contact </td>
+        </tr>
+        <tr> 
+          <td width="25%" class="info">Responsable</td>
+          <td width="75%"><a href="bocquet">BOCQUET Christian</a></td>
+        </tr>
+        <tr> 
+          <td width="25%" class="info">Responsable &agrave; d&eacute;faut</td>
+          <td width="75%"><a href="bocquet">ROSTAS Laurent</a></td>
+        </tr>
+        <tr> 
+          <td width="25%" class="info">D&eacute;tail</td>
+          <td width="75%"><a href="annuaire">Annuaire</a></td>
+        </tr>
+        <tr> 
+          <td colspan="2" align="center">&nbsp;</td>
+        </tr>
+        <!-- Localisation -->
+        <tr> 
+          <td colspan="2" align="center" class="barreTitreOrange"> Comp&eacute;tences 
+          </td>
+        </tr>
+        <tr> 
+          <td width="25%" class="info">Th&eacute;orique</td>
+          <td width="75%"><a href="bocquet">WAS 3.5</a>, <a href="bocquet">WAS</a></td>
+        </tr>
+        <tr> 
+          <td width="25%" class="info">Ma&icirc;trise</td>
+          <td width="75%"><a href="bocquet">EJB 2.0</a>, <a href="bocquet">WAS</a></td>
+        </tr>
+        <tr> 
+          <td width="25%" class="info">Expertise</td>
+          <td width="75%"><a href="bocquet">EJB 1.1</a>, <a href="bocquet">WAS</a></td>
+        </tr>
+        <form action="" method="post">
+        </form>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+</body></html>

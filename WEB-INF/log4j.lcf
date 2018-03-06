@@ -1,0 +1,26 @@
+# Fixe le niveau de log jusqu'à DEBUG avec une sortie sur console
+log4j.rootLogger=DEBUG, console
+
+# La sortie sur console
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+
+# Format d'affichage sur la console
+log4j.appender.console.layout=org.apache.log4j.PatternLayout
+log4j.appender.console.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
+
+#-----------------------------------------------------------------------------
+#La sortie Fichier
+#Pour J2EERI, ajouter la ligne suivante  dans le server.policy :
+# ---->    permission java.io.FilePermission "kicsa.log","write"; 
+
+log4j.appender.file=org.apache.log4j.FileAppender
+
+#S'affiche normalement dans le repertoire de travail
+log4j.appender.file.File=kicsa.log
+
+# Format d'affichage
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.file.Append=false
+log4j.appender.file.layout.ConversionPattern=%d{ISO8601} [%t] [%-5p] %c %x - %m\n
+
+log4j.logger.ImportThread=DEBUG

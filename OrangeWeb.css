@@ -1,0 +1,428 @@
+BODY
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica", "Arial"
+; background-color: #FFFFFF; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px
+; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px
+}
+A
+{
+    COLOR: #ff6600;
+    FONT-FAMILY: "Helvetica", "Arial";
+    TEXT-DECORATION: underline
+}
+A:hover
+{
+    COLOR: #ff6600;
+    FONT-FAMILY: "Helvetica", "Arial";
+    TEXT-DECORATION: none
+}
+A.menuTop
+{
+    FONT-SIZE: 12px;
+    COLOR: #ffffff;
+    FONT-FAMILY: "Helvetica 45 Light", "Helvetica", "Arial";
+    TEXT-DECORATION: none
+}
+A.menuTop:hover
+{
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica 45 Light", "Helvetica", "Arial";
+    TEXT-DECORATION: none
+}
+A.menuTopOn2
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.menuTopOn2:hover
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.menuSub
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ff6600;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.menuSub:hover
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.menuGrate
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.menuGrate:hover
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.vitrine
+{
+    FONT-SIZE: 11pt
+}
+A.vitrine:hover
+{
+    FONT-SIZE: 11pt
+}
+A.comment
+{
+    FONT-SIZE: 11pt;
+    TEXT-DECORATION: none
+}
+A.comment:hover
+{
+    COLOR: #000000
+}
+A.comment2
+{
+    FONT-SIZE: 16pt;
+    TEXT-DECORATION: none
+}
+A.comment2:hover
+{
+    COLOR: #000000
+}
+TABLE.noir
+{
+    BACKGROUND-COLOR: #000000
+}
+TR.orange
+{
+    BACKGROUND-COLOR: #ff6600
+}
+TR.noir
+{
+    BACKGROUND-COLOR: #000000
+}
+TD
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica", "Arial"
+}
+TD.orange
+{
+    BACKGROUND-COLOR: #ff6600
+}
+TD.douze
+{
+    FONT-SIZE: 11pt
+}
+TD.onze
+{
+    FONT-SIZE: 11pt
+}
+TD.neuf
+{
+    FONT-SIZE: 11pt
+}
+TD.huit
+{
+    FONT-SIZE: 11pt
+}
+P
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica", "Arial"
+}
+LI
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica", "Arial"
+}
+LI.orange
+{
+    COLOR: #ff6600
+}
+LI.onzeOrange
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ff6600
+}
+LI.douzeOrange
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ff6600
+}
+FONT
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica", "Arial"
+}
+FONT.blanc
+{
+    COLOR: #ffffff
+}
+FONT.orange
+{
+    COLOR: #ff6600
+}
+FONT.huit
+{
+    FONT-SIZE: 8pt
+}
+FONT.huitBlanc
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ffffff
+}
+FONT.huitOrange
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ff6600
+}
+FONT.neuf
+{
+    FONT-SIZE: 11pt
+}
+FONT.neufBlanc
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ffffff
+}
+FONT.neufOrange
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ff6600
+}
+FONT.onze
+{
+    FONT-SIZE: 11pt
+}
+FONT.onzeBlanc
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ffffff
+}
+FONT.onzeOrange
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ff6600
+}
+FONT.douze
+{
+    FONT-SIZE: 11pt
+}
+FONT.douzeBlanc
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ffffff
+}
+FONT.douzeOrange
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ff6600
+}
+FONT.seizeOrange
+{
+    FONT-SIZE: 16pt;
+    COLOR: #ff6600
+}
+FONT.seize
+{
+    FONT-SIZE: 16pt;
+    COLOR: #000000
+}
+FONT.seizeBlanc
+{
+    FONT-SIZE: 16pt;
+    COLOR: #ffffff
+}
+A.vingtquatre:hover
+{
+    FONT-SIZE: 18pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica 65 Medium","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.vingtquatre
+{
+    FONT-SIZE: 18pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica 65 Medium","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+FONT.vingtquatre
+{
+    FONT-SIZE: 18pt;
+    FONT-FAMILY: "Helvetica 65 Medium","Helvetica","Arial"
+}
+FONT.menuTop
+{
+    COLOR: #ffffff
+}
+INPUT
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: "Helvetica", "Arial"
+}
+INPUT.orange
+{
+    BACKGROUND-COLOR: #ff6600
+}
+INPUT.noir
+{
+    BACKGROUND-COLOR: #000000
+}
+TEXTAREA
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: "Helvetica", "Arial"
+}
+SELECT
+{
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    FONT-FAMILY: "Helvetica", "Arial"
+}
+FONT.Helvetica22ptLightOrange
+{
+    FONT-SIZE: 22pt;
+    COLOR: #ff6600;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+FONT.Helvetica22ptLightBlanc
+{
+    FONT-SIZE: 22pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+FONT.Helvetica22ptLightOrange
+{
+    FONT-SIZE: 22pt;
+    COLOR: #ff6600;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+FONT.Helvetica24ptLightBlanc
+{
+    FONT-SIZE: 24pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+FONT.Helvetica28ptLightOrange
+{
+    FONT-SIZE: 28pt;
+    COLOR: #ff6600;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+FONT.Helvetica28ptLightBlanc
+{
+    FONT-SIZE: 28pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+FONT.erreur
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: red;
+    FONT-FAMILY: Helvetica, Arial
+}
+FONT.titre
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-FAMILY: Helvetica, Arial
+}
+A.ListHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Helvetica, Arial;
+    TEXT-DECORATION: none
+}
+A.ListHeader:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Helvetica, Arial;
+    TEXT-DECORATION: underline
+}
+A.menuTopOn
+{
+    FONT-SIZE: 10pt;
+    COLOR: #ff6600;
+    FONT-FAMILY: Helvetica, Arial;
+    TEXT-DECORATION: none
+}
+FONT.ecarte
+{
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    FONT-FAMILY: Helvetica, Arial
+}
+FONT.ecarteOrange
+{
+    FONT-SIZE: 9pt;
+    COLOR: #ff6600;
+    FONT-FAMILY: Helvetica, Arial
+}
+A.menuTopHome
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.menuTopHome:hover
+{
+    FONT-SIZE: 11pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: "Helvetica 45 Light","Helvetica","Arial";
+    TEXT-DECORATION: none
+}
+A.commentHome
+{
+    FONT-SIZE: 16pt;
+    TEXT-DECORATION: none
+}
+A.commentHome:hover
+{
+    FONT-SIZE: 16pt;
+    TEXT-DECORATION: none
+}
+FONT.NewsBlanc
+{
+    FONT-SIZE: 8pt;
+    COLOR: #ffffff
+}
+FONT.NewsOrange
+{
+    FONT-SIZE: 8pt;
+    COLOR: #ff6600
+}
+FONT.NewsNoir
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000000
+}

@@ -1,0 +1,420 @@
+<html><head><title>J&eacute;r&ocirc;me Beau - Fiche de comp&eacute;tences - KiCsa - Orange France</title>
+   
+  <link rel="STYLESHEET" type="text/css" href="dsi.css">
+<script language="JavaScript">
+
+<!--
+
+// Ouverture 
+
+function dbg_aff_dimension(lgWidth, lgHeight) {
+
+
+
+	stEgal = '\t=  "' ;
+
+	alert(' **** STEPH DEBUG ****' + '\n' +
+
+	      ' Dimensions de la fenêtre à venir' + '"\n' +
+
+	      ' Largeur' + stEgal + lgWidth       + '"\n' +
+
+	      ' Hauteur' + stEgal + lgHeight       + '"\n'
+
+		  ) ;
+
+	
+
+}
+
+function fenetre(strPage,lgWidth,lgHeight) { 
+
+	//dbg_aff_dimension(lgWidth, lgHeight) ;
+
+
+
+	if (lgWidth  == null)	lgWidth  = 620 ;
+
+	if (lgHeight == null)	lgHeight = 258 ;
+
+	
+
+	//dbg_aff_dimension(lgWidth, lgHeight) ;
+
+	
+
+	win1 = window.open (strPage,'Fenetre','screenX=400,screenY=100,scrollbars=1,location=0,toolbar=0,directories=0,menubar=0,status=0,resizable=0,width='+lgWidth+',height='+lgHeight) ; 
+
+	win1.focus();
+
+} 
+
+
+
+// -->
+
+</script>
+
+<script language="JavaScript">
+
+
+
+function mail(nom,Objet)
+
+{
+
+p = document.location.toString()
+
+if (Objet.length > 0)
+
+{
+
+	p = Objet;
+
+}
+
+pg = 'http://mailto.francetelecom.fr/cgi-bin/messagerie/message.pl?'+nom+'&URL='+escape(p)
+
+fen = window.open(pg,'mail','resizable=1,scrollbars=1,width=600,height=500')
+
+fen.focus();
+
+}
+
+</script></head>
+	
+
+ <body bgcolor="#ffffff" link="#ee6d04" vlink="#ee6d04" alink="#000000">
+
+<table width="100%">
+  <tbody> 
+  <tr> 
+    <td align="center"> 
+      <table border="0" width="100%" cellpadding="2" cellspacing="0">
+        <tr> 
+          <td align="left" valign="top" rowspan="3"> 
+            <p><span class="titre_noir_2">&eacute;dition d'une personne</span></p>
+          </td>
+          <td valign="top">&nbsp;</td>
+          <td align="right" valign="top" bgcolor="#FFF8F0"><span class="normal">Nom</span><font class="nomorange"></font></td>
+          <td valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+          <td align="left" valign="top" bgcolor="#FFF8F0"><font class="nomorange"> 
+            <input type="text" name="textfield2" value="Beau" size="30">
+            </font></td>
+        </tr>
+        <tr> 
+          <td align="center" valign="top">&nbsp;</td>
+          <td bgcolor="#FFF8F0" align="right" valign="top"><span class="normal">Pr&eacute;nom</span></td>
+          <td bgcolor="#FFF8F0" align="center" valign="top">&nbsp;</td>
+          <td bgcolor="#FFF8F0" align="left" valign="top"><font class="nomorange"> 
+            <input type="text" name="textfield3" value="J&eacute;r&ocirc;me" size="30">
+            </font></td>
+        </tr>
+        <tr> 
+          <td align="center">&nbsp;</td>
+          <td align="center">&nbsp;</td>
+          <td align="center">&nbsp;</td>
+          <td align="center">&nbsp;</td>
+        </tr>
+        <tbody> 
+        <form method="post" action="action/PersonneEdit">
+          <tr> 
+            <td colspan="5" align="center" class="barreTitreOrange"> Organisation</td>
+          </tr>
+          <tr> 
+            <td width="2%" class="normal">&nbsp;</td>
+            <td width="2%" class="normal">&nbsp;</td>
+            <td width="3%" align="right" class="normal">Responsable</td>
+            <td width="5" class="normal">&nbsp;</td>
+            <td class="normal"> 
+              <select name="select">
+                <option selected>Bocquet, Christian</option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td align="center">&nbsp;</td>
+            <td align="center">&nbsp;</td>
+            <td class="normal" align="right">Entit&eacute;</td>
+            <td align="center">&nbsp;</td>
+            <td> 
+              <select name="select5">
+                <option selected>DSI/IT/EASY/ACE</option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan="5" align="center">&nbsp;</td>
+          </tr>
+          <!-- Localisation -->
+          <tr> 
+            <td colspan="5" align="center" class="barreTitreOrange"> Comp&eacute;tences 
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right" colspan="5">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right" class="nav">WAS</td>
+            <td width="5" valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Modifier</div>
+            </td>
+            <td width="5" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td valign="top" bgcolor="#FFF8F0"><span class="info">Niveau</span> 
+              <select name="select4">
+                <option selected>Th&eacute;orique</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              <span class="info">Responsable de cette comp&eacute;tence 
+              <input type="checkbox" name="checkbox3" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right">&nbsp;</td>
+            <td width="5" valign="top">&nbsp;</td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Supprimer</div>
+            </td>
+            <td width="" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td valign="top" bgcolor="#FFF8F0"><span class="info"> 
+              <input type="checkbox" name="checkbox" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td colspan="5">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right" class="nav">WAS 3.5</td>
+            <td width="5" valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Modifier</div>
+            </td>
+            <td width="5" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td valign="top" bgcolor="#FFF8F0"><span class="info">Niveau</span> 
+              <select name="select4">
+                <option selected>Th&eacute;orique</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              <span class="info">Responsable de cette comp&eacute;tence 
+              <input type="checkbox" name="checkbox3" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right">&nbsp;</td>
+            <td width="5" valign="top">&nbsp;</td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Supprimer</div>
+            </td>
+            <td width="" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td valign="top" bgcolor="#FFF8F0"><span class="info"> 
+              <input type="checkbox" name="checkbox" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td colspan="5">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right" class="nav">EJB 2.0</td>
+            <td width="5" valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Modifier</div>
+            </td>
+            <td width="5" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td valign="top" bgcolor="#FFF8F0"><span class="info">Niveau</span> 
+              <select name="select4">
+                <option>Th&eacute;orique</option>
+                <option selected>Ma&icirc;trise</option>
+                <option>3</option>
+              </select>
+              <span class="info">Responsable de cette comp&eacute;tence 
+              <input type="checkbox" name="checkbox3" value="checkbox" checked>
+              </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right">&nbsp;</td>
+            <td width="5" valign="top">&nbsp;</td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Supprimer</div>
+            </td>
+            <td width="" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td valign="top" bgcolor="#FFF8F0"><span class="info"> 
+              <input type="checkbox" name="checkbox" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td colspan="5">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right" class="nav">EJB 1.1</td>
+            <td  valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Modifier</div>
+            </td>
+            <td width="5" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td valign="top" bgcolor="#FFF8F0"><span class="info">Niveau</span> 
+              <select name="select4">
+                <option>Th&eacute;orique</option>
+                <option>2</option>
+                <option selected>Expertise</option>
+              </select>
+              <span class="info">Responsable de cette comp&eacute;tence 
+              <input type="checkbox" name="checkbox3" value="checkbox" checked>
+              </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right">&nbsp;</td>
+            <td width="5" valign="top">&nbsp;</td>
+            <td align="center" class="normal" valign="top" bgcolor="#FFF8F0"> 
+              <div align="right">Supprimer</div>
+            </td>
+            <td width="" valign="top" bgcolor="#FFF8F0">&nbsp;</td>
+            <td valign="top" bgcolor="#FFF8F0"><span class="info"> 
+              <input type="checkbox" name="checkbox" value="checkbox">
+              </span></td>
+          </tr>
+          <tr> 
+            <td colspan="5">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td align="right" valign="top"> 
+              <div align="right"><font face="Arial" size="2"><b class="entiteorange"> 
+                <select name="select7">
+                  <option selected>Serveur applicatif</option>
+                  <option>Systeme d'exploitation</option>
+                  <option>- Selectionnez comp&eacute;tence -</option>
+                </select>
+                </b></font></div>
+            </td>
+            <td align="center"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="right" class="normal" bgcolor="#FFF8F0"> <font face="Arial" size="2">Nouvelle 
+              comp&eacute;tence </font></td>
+            <td bgcolor="#FFF8F0">&nbsp;</td>
+            <td bgcolor="#FFF8F0"> <span class="info">Niveau</span> 
+              <select name="select8">
+                <option>Th&eacute;orique</option>
+                <option>2</option>
+                <option selected>Expertise</option>
+              </select>
+              <span class="info">Responsable de cette comp&eacute;tence 
+              <input type="checkbox" name="checkbox32" value="checkbox" checked>
+              </span></td>
+          </tr>
+          <tr> 
+            <td colspan="5">&nbsp;</td>
+          </tr>
+        </form>
+        <tr> 
+          <td colspan="5" align="center" class="barreTitreOrange"> Droits </td>
+        </tr>
+        <form action="" method="post">
+          <tr> 
+            <td class="normal" nowrap> Modifier son profil</td>
+            <td  class="normal">&nbsp;</td>
+            <td colspan="3" class="normal"> 
+              <input type="checkbox" name="checkbox4" value="checkbox" checked>
+            </td>
+          </tr>
+          <tr > 
+            <td  class="normal" nowrap>Proposer une comp&eacute;tence g&eacute;n&eacute;rale</td>
+            <td  class="normal">&nbsp;</td>
+            <td colspan="3" class="normal" > 
+              <input type="checkbox" name="checkbox2" value="checkbox" checked>
+            </td>
+          </tr>
+          <tr > 
+            <td  class="normal" nowrap>Valider une comp&eacute;tence propos&eacute;e 
+            </td>
+            <td class="normal">&nbsp;</td>
+            <td colspan="3" class="normal" > 
+              <input type="checkbox" name="checkbox22" value="checkbox" checked>
+              <span class="info">pour les comp&eacute;tences dont on est responsable</span> 
+            </td>
+          </tr>
+          <tr > 
+            <td " class="normal" nowrap>Ajouter une personne</td>
+            <td  class="normal">&nbsp;</td>
+            <td colspan="3" class="normal" > 
+              <select name="select3">
+                <option>Non</option>
+                <option selected>Sous son responsable</option>
+                <option>Partout</option>
+              </select>
+            </td>
+          </tr>
+          <tr > 
+            <td  class="normal" nowrap>Voir les personnes</td>
+            <td class="normal">&nbsp; </td>
+            <td colspan="3" class="normal" > 
+              <select name="select6">
+                <option>Non</option>
+                <option selected>Sous son responsable</option>
+                <option>Toujours</option>
+              </select>
+            </td>
+          </tr>
+          <tr > 
+            <td  class="normal" nowrap>Modifier les droits</td>
+            <td class="normal">&nbsp; </td>
+            <td colspan="3"  class="normal" > 
+              <select name="modifDroits">
+                <option>Non</option>
+                <option selected>Sous son responsable</option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td class="normal" nowrap>D&eacute;l&eacute;guer ses droits</td>
+            <td  valign="top">&nbsp;</td>
+            <td valign="top" align="right"> <span class="normal">&agrave;</span> 
+              <span class="prenomorange">laurent</span><span class="nomorange">richer</span></td>
+            <td  valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td valign="top" class="normal">Supprimer<span class="info"> </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top" align="right" nowrap> <span class="normal">&agrave;</span> 
+              <span class="prenomorange">christian</span><span class="nomorange">bocquet</span></td>
+            <td width="5" valign="top"><img src="images/fldro.gif" width="13" height="18"></td>
+            <td valign="top" class="normal">Supprimer<span class="info"> </span></td>
+          </tr>
+          <tr> 
+            <td valign="top" align="right">&nbsp;</td>
+            <td><span class="normal"></span></td>
+            <td align="right"><span class="normal"> &agrave; nouveau d&eacute;l&eacute;gu&eacute;</span></td>
+            <td><img src="images/fldro.gif" width="13" height="18"></td>
+            <td align="center"> 
+              <select name="select2">
+                <option selected>Laurent Rostas</option>
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td align="center" colspan="5"> 
+              <input type="submit" name="Submit" value="Enregistrer">
+              <input type="submit" name="Submit2" value="Supprimer">
+            </td>
+          </tr>
+        </form>
+        <tr> 
+          <td align="center" colspan="5"> <i><br>
+            Fiche mise à jour le 20/08/2002<br>
+            </i> </td>
+        </tr>
+        <tr> 
+          <td align="center" width="50%" colspan="5"> <a href="javascript:history.go(-1)">retour</a></td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+  </tbody> 
+</table>
+
+</body></html>

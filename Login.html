@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0122)http://saloon.ftm.francetelecom.fr/quickplace/service-rsu/main.nsf?Login&RedirectTo=%2Fquickplace%2Fservice-rsu%2Fmain.nsf -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><!-- Lotus-Domino (Release 5.0.8 - June 18, 2001 on Windows NT/Intel) -->
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 bgColor=#ffffff onload=setFormFocus()>
+<FORM name=_DominoForm action=/names.nsf?Login method=post><INPUT type=hidden 
+value=0000000000000000 name=%%ModDate>
+<SCRIPT language=JavaScript>
+function setFormFocus() {
+	document.forms[0].Username.focus();
+	document.forms[0].Username.select();
+}
+function getCookieVal (offset)
+{
+	var sCookieVal;
+	var endstr = document.cookie.indexOf (";", offset);
+	if (endstr == -1)
+		endstr = document.cookie.length;
+	sCookieVal = unescape(document.cookie.substring(offset, endstr));
+	return sCookieVal;
+}
+function GetCookie (name)
+{
+	var arg	= name + "=";
+	var alen	= arg.length;
+	var clen	= document.cookie.length;
+	var i	= 0;
+	
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i, j) == arg)
+			return getCookieVal (j);
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0)
+			break;
+	}
+	return null;
+}
+function SetCookie (name, value, duration)
+{
+	var argv			= SetCookie.arguments;
+	var argc			= SetCookie.arguments.length;
+	var expires		= (argc > 2) ? argv[2] : null;
+	var path			= (argc > 3) ? argv[3] : null;
+	var domain		= (argc > 4) ? argv[4] : null;
+	var secure		= (argc > 5) ? argv[5] : false;
+	
+	var dtCookieDays	= new Date();
+	var today		= new Date();
+	
+	// How many days do you want the cookie to live
+	var sCookieDays	= 10;
+	
+//	dtCookieDays.setTime(today.getTime() + 1000*60*60*24* sCookieDays + 100);
+	dtCookieDays.setTime(today.getTime() + 1000*60*duration + 100);
+	
+	
+	// Name the cookie and put it on the users machine
+	document.cookie = name + "=" + escape (value) +
+	"; expires=" + dtCookieDays.toGMTString() +
+	((path == null) ? "" : ("; path=" + path)) +
+	((domain == null) ? "" : ("; domain=" + domain)) +
+	((secure == true) ? "; secure" : "");
+}
+function verifField()
+{
+	var ChampsOmis	= "";
+	var UserName		= "";
+	var Password		= "";
+	var DbPath		= document.forms[0].elements['DbPath'].value;;
+	var AccessFailed	= (GetCookie('AccessFailed')!="") ? new Number(GetCookie( 'AccessFailed' )) : 1;
+	var RefererConst		= new String( "/" + DbPath + "/(PasswordControl)?OpenAgent&Referer=" );
+	var RedirectTo		= new String( "/quickplace/service-rsu/main.nsf" );
+	UserName		= document.forms[0].elements['Username'].value;
+	Password		= document.forms[0].elements['Password'].value;
+	if ((!UserName) || (!Password))
+	{
+		if (!UserName)
+		{
+			ChampsOmis	= "- votre nom d'utilisateur\r";
+		}
+		if (!Password)
+		{
+			ChampsOmis	= ChampsOmis + "- votre mot de passe\r";
+		}
+	}
+	if (ChampsOmis)
+	{
+		alertMessage	= "Il y manque quelques informations :\r"
+					+ ChampsOmis;
+		alert (alertMessage)
+	}
+	else
+	{
+		if( RedirectTo.indexOf( "PasswordControl" )<1 )
+		{
+			document.forms[0].RedirectTo.value = RefererConst + "/quickplace/service-rsu/main.nsf";
+		}
+		else
+		{
+			document.forms[0].RedirectTo.value = "/quickplace/service-rsu/main.nsf";
+		}
+		document.forms[0].submit();
+	}
+}
+</SCRIPT>
+ <INPUT type=hidden value=/ name=RedirectTo> <INPUT type=hidden value=bcu.nsf 
+name=DbPath> 
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=7 border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD vAlign=center width=541 bgColor=#ff6600 colSpan=3>
+      <CENTER><FONT face="Helvetica, Arial" size=6>Authentification 
+      Domino/QuickPlace</FONT> 
+      <P><B><FONT face="Helvetica, Arial" color=#000000 size=4></FONT></B>
+      <P><FONT face="Helvetica, Arial" color=#000000 size=3>Entrez votre code 
+      d'accès et votre mot de passe.</FONT> </CENTER></P></TD></TR>
+  <TR vAlign=top>
+    <TD vAlign=center width=541 bgColor=#ff6600 colSpan=3>
+      <HR SIZE=1>
+    </TD></TR>
+  <TR vAlign=top>
+    <TD vAlign=center width=133 bgColor=#ff6600><FONT face="Helvetica, Arial" 
+      color=#000000 size=3>Code d'accès</FONT> </TD>
+    <TD vAlign=center width=408 bgColor=#ff6600 colSpan=2>
+      <CENTER><FONT face="Helvetica, Arial" color=#000000 size=3><INPUT 
+      maxLength=256 name=Username></FONT> </CENTER></TD></TR>
+  <TR vAlign=top>
+    <TD vAlign=center width=133 bgColor=#ff6600><FONT face="Helvetica, Arial" 
+      color=#000000 size=3>Mot de passe</FONT> </TD>
+    <TD vAlign=center width=408 bgColor=#ff6600>
+      <CENTER><FONT face="Helvetica, Arial" color=#000000 size=3><INPUT 
+      type=password maxLength=256 name=Password></FONT> </CENTER></TD></TR>
+  <TR vAlign=top>
+    <TD vAlign=center width=541 bgColor=#ff6600 colSpan=3>
+      <HR SIZE=1>
+    </TD></TR>
+  <TR vAlign=top>
+    <TD vAlign=top width=541 bgColor=#ff6600 colSpan=3>
+      <CENTER><INPUT onclick=verifField() type=button value=Valider> <INPUT onclick="window.top.location.href='http://saloon.ftm.francetelecom.fr'" type=button value=Annuler> 
+      </CENTER></TD></TR></TBODY></TABLE></CENTER><!--
+<INPUT TYPE=submit VALUE="">--></FORM></BODY></HTML>
